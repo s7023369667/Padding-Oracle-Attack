@@ -18,3 +18,5 @@ How to actually code Python to do  the Padding-Oracle-Attack ?
 我們想破解C2: ciphertext[32:48]找出P2: plaintext[32:48]，此時將先對C1:ciphertext[16:32]設成全零並從最後一個byte將0到255依序填入ciphertext[31]猜測，並對ciphertext[16:32]+ ciphertext[32:48]進行Oracle，如果回傳的是valid代表我們找到ciphertext[31]應該填入的猜測值使得解密後padding結果為valid，此時我們透過將ciphertext[31]和padding byte做XOR即可得到Intermediate[47]，當我們得到Intermediate[47]，這時候要進行下一輪之前，我們必須將C1的最後一個byte設為我們已知的Intermediate[47]和下一個padding byte的XOR值，才接著把C1的ciphertext[30]做填值和C2送入Oracle，解出下一個Intermediate[46]，如此一來當我們解出整個Intermediate[32:48]後，將Intermediate[32:48]和ciphertext[32:48]做XOR即可得到plaintext[32:48]。
 
 在解密過程中，因為 sever 是老師提供的並且在學校的網域，所以發現如果使用非學校的網路會解到一半就被擋下來，所以非常困擾，因為會沒辦法 Debug， 如果有一樣的問題必須使用 VPN 連學校網域，雖然網速慢了點，但至少可以 好好的 Debug 把程式刻出來之後，再找時間來學校一次跑完。
+
+Author : Cheng Po Sheng
