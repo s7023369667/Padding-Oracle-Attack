@@ -1,7 +1,7 @@
 # Padding-Oracle-Attack
 How to actually code Python to do  the Padding-Oracle-Attack ?
 
-•NTNU Oracle Sever: http://140.122.185.210:8080/oracle/xxx 
+•NTNU Oracle Sever: http://140.xxx.xxx.xxx:8080/oracle/xxx 
 
 •Reference : https://samsclass.info/141/proj/p14pad.htm 
 
