@@ -1,5 +1,5 @@
 # Padding-Oracle-Attack
-How to actually code Python to do  the Padding-Oracle-Attack ?
+How to actually Use Python to do  the Padding-Oracle-Attack ?
 
 •NTNU Oracle Sever: http://140.xxx.xxx.xxx:8080/oracle/xxx 
 
@@ -19,4 +19,3 @@ How to actually code Python to do  the Padding-Oracle-Attack ?
 
 在解密過程中，因為 sever 是老師提供的並且在學校的網域，所以發現如果使用非學校的網路會解到一半就被擋下來，所以非常困擾，因為會沒辦法 Debug， 如果有一樣的問題必須使用 VPN 連學校網域，雖然網速慢了點，但至少可以 好好的 Debug 把程式刻出來之後，再找時間來學校一次跑完。
 
-Author : Cheng Po Sheng
